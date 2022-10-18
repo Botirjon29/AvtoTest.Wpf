@@ -1,0 +1,19 @@
+﻿<Page x:Class="New_AutoTest.Pages.TicketsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:New_AutoTest.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="500"
+      Title="TicketsPage">
+
+    <Grid Background="LightCyan">
+        <Label Content="Tickets" FontSize="30" FontWeight="DemiBold" HorizontalAlignment="Center" VerticalAlignment="Top" Height="50"></Label>
+        <ScrollViewer Margin="0,50,0,60">
+            <StackPanel x:Name="TicketsPanel">
+            </StackPanel>
+        </ScrollViewer>
+        <Button Content="Menu" FontSize="20" Height="30" Width="80" VerticalAlignment="Bottom" Click="MenuButton_Click" Background="LightBlue"></Button>
+    </Grid>
+</Page>

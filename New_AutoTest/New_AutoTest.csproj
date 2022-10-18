@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Pages\IMG_20220807_185201_212.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DatabaseForNewAutoTest\DatabaseForNewAutoTest.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Pages\IMG_20220807_185201_212.jpg" />
+  </ItemGroup>
+
+</Project>

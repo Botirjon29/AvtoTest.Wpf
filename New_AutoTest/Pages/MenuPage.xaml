@@ -1,0 +1,26 @@
+﻿<Page x:Class="New_AutoTest.Pages.MenuPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:New_AutoTest.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="500"
+      Title="MenuPage">
+
+    <Grid >
+        <StackPanel>
+            <Label Content="Menu" FontSize="30" FontWeight="DemiBold" Height="50" HorizontalAlignment="Center"></Label>
+            <StackPanel x:Name="ImageMenuPanel" Height="300">
+                <Image x:Name="ImageMenu" Width="350" Height="250" Margin="0,20,0,0"></Image>
+            </StackPanel>
+            <Grid Height="50" Margin="0,0,0,30">
+                <TextBlock x:Name="QuestionsBlock" Text="0/700" Height="35" Width="100" FontSize="25" Margin="40,0,0,0" HorizontalAlignment="Left"></TextBlock>
+                <TextBlock x:Name="TicketsBlock" Text="0/70" Height="35" Width="100" FontSize="25" HorizontalAlignment="Right"></TextBlock>
+            </Grid>
+            <Button Content="Tickets" FontSize="20" FontWeight="DemiBold" Height="50" Width="150" Click="TicketsButton_Click" Background="DeepSkyBlue" Margin="0,0,0,5" BorderBrush="Red" BorderThickness="2"></Button>
+            <Button Content="Examination" FontSize="20" FontWeight="DemiBold" Height="50" Width="150" Click="ExaminationButton_Click" Background="YellowGreen" BorderBrush="Red" BorderThickness="2"></Button>
+        </StackPanel>
+        <Button Width="70" Height="40" VerticalAlignment="Bottom" Click="ExitButton_Click" Content="Exit" FontSize="20" FontWeight="Bold" Background="BlueViolet" Foreground="Black" BorderBrush="Red" BorderThickness="2"></Button>
+    </Grid>
+</Page>

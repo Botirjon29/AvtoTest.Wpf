@@ -1,0 +1,53 @@
+﻿<Page x:Class="New_AutoTest.Pages.ExaminationPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:New_AutoTest.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="700" d:DesignWidth="500"
+      Title="ExaminationPage">
+
+    <Page.Resources>
+        <Style x:Key="QuestionIndexButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="30"></Setter>
+            <Setter Property="Height" Value="30"></Setter>
+            <Setter Property="BorderBrush" Value="Aqua"></Setter>
+            <Setter Property="Background" Value="LightYellow"></Setter>
+            <Setter Property="BorderThickness" Value="3"></Setter>
+            <Setter Property="Margin" Value="3,0,3,0"></Setter>
+            <Setter Property="FontWeight" Value="Bold"></Setter>
+
+        </Style>
+        <Style x:Key="DefaultQuestionIndexButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="25"></Setter>
+            <Setter Property="Height" Value="25"></Setter>
+            <Setter Property="Background" Value="Yellow"></Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid Background="LightGoldenrodYellow">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="108*"/>
+            <ColumnDefinition Width="17*"/>
+        </Grid.ColumnDefinitions>
+        <Label Name="TitleLabel" Content="Examination" FontSize="30" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" FontWeight="DemiBold" Margin="161,0,0,0"></Label>
+        <StackPanel Margin="0,50,0,60" Grid.ColumnSpan="2">
+            <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled">
+                <StackPanel x:Name="QuestionsIndexPanel" Orientation="Horizontal" Height="30">
+
+                </StackPanel>
+            </ScrollViewer>
+            <StackPanel>
+                <Image x:Name="QuestionImage" Width="250" Height="250" Margin="0,30,0,0"></Image>
+                <TextBlock Name="QuestionText" MinHeight="50" TextWrapping="Wrap" Text="1 - Savol" FontSize="20" FontWeight="DemiBold" Margin="10"></TextBlock>
+                <ScrollViewer MaxHeight="120">
+                    <StackPanel x:Name="ChoicesPanel">
+
+                    </StackPanel>
+                </ScrollViewer>
+            </StackPanel>
+        </StackPanel>
+        <Button Content="Menu" FontSize="20" Height="30" Width="100" Background="Khaki" VerticalAlignment="Bottom" Click="MenuButton_Click" Margin="200,0,132,0"></Button>
+    </Grid>
+</Page>
